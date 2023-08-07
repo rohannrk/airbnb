@@ -11,7 +11,7 @@ import {
     useForm
 } from 'react-hook-form';
 
-import useRegisterModal from '@/app/hooks/useRegistarModal';
+import useRegisterModal from '@/app/hooks/useRegisterModal';
 import useLoginModal from '@/app/hooks/useLoginModal';
 
 import Modal from './Modal';
@@ -19,7 +19,6 @@ import Heading from '../Heading';
 import Input from '../inputs/Input';
 import { toast } from 'react-hot-toast';
 import Button from '../Button';
-import { calculateOverrideValues } from 'next/dist/server/font-utils';
 import { useRouter } from 'next/navigation';
 
 
@@ -93,13 +92,13 @@ const LoginModal = () => {
             outline
             label='Continue with Google'
             icon={FcGoogle}
-            onClick={() => {}}
+            onClick={() => signIn('google')}
             />
             <Button
             outline
             label='Continue with Github'
             icon={AiFillGithub}
-            onClick={() => {}}
+            onClick={() => signIn('github')}
             />
             <div
             className="
