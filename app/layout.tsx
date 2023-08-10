@@ -1,4 +1,4 @@
-import { Nunito } from 'next/font/google'
+import { Nunito } from 'next/font/google';
 
 import './globals.css'
 import Navbar from "./components/navbar/Navbar";
@@ -34,7 +34,9 @@ export default async function RootLayout({
           <LoginModal/>
           <Navbar currentUser={currentUser}/>
         </ClientOnly>
-        {children}
+        <div className="pb-20 pt-28">
+          {children}
+        </div> 
       </body>
     </html>
   )
