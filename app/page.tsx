@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic'
 import { defaultConfig } from "next/dist/server/config-shared";
 import getCurrentUser from "./actions/getCurrentUser";
 import getListings, { IListingsParams } from "./actions/getListings";
